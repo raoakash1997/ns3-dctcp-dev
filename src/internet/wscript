@@ -149,6 +149,7 @@ def build(bld):
         'model/tcp-socket-state.cc',
         'model/tcp-highspeed.cc',
         'model/tcp-hybla.cc',
+        'model/tcp-dctcp.cc',
         'model/tcp-vegas.cc',
         'model/tcp-congestion-ops.cc',
         'model/tcp-westwood.cc',
@@ -293,6 +294,7 @@ def build(bld):
         'test/tcp-datasentcb-test.cc',
         'test/ipv4-rip-test.cc',
         'test/tcp-close-test.cc',
+        'test/tcp-dctcp-test.cc',
         ]
     privateheaders = bld(features='ns3privateheader')
     privateheaders.module = 'internet'
@@ -393,6 +395,7 @@ def build(bld):
         'model/tcp-illinois.h',
         'model/tcp-htcp.h',
         'model/tcp-lp.h',
+        'model/tcp-dctcp.h',
         'model/tcp-ledbat.h',
         'model/tcp-socket-base.h',
         'model/tcp-socket-state.h',
