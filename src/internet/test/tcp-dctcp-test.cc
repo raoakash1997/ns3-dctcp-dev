@@ -69,10 +69,10 @@ private:
 
 TcpDctcpCodePointsTest::TcpDctcpCodePointsTest (uint8_t testCase, const std::string &desc)
   : TcpGeneralTest (desc),
-    m_senderSent (0),
-    m_receiverSent (0),
-    m_senderReceived (0),
-    m_testCase (testCase)
+  m_senderSent (0),
+  m_receiverSent (0),
+  m_senderReceived (0),
+  m_testCase (testCase)
 {
 }
 
@@ -537,13 +537,13 @@ TcpDctcpToNewReno::TcpDctcpToNewReno (uint32_t cWnd, uint32_t segmentSize, uint3
                                       uint32_t segmentsAcked, SequenceNumber32 highTxMark,
                                       SequenceNumber32 lastAckedSeq, Time rtt, const std::string &name)
   : TestCase (name),
-    m_cWnd (cWnd),
-    m_segmentSize (segmentSize),
-    m_segmentsAcked (segmentsAcked),
-    m_ssThresh (ssThresh),
-    m_rtt (rtt),
-    m_highTxMark (highTxMark),
-    m_lastAckedSeq (lastAckedSeq)
+  m_cWnd (cWnd),
+  m_segmentSize (segmentSize),
+  m_segmentsAcked (segmentsAcked),
+  m_ssThresh (ssThresh),
+  m_rtt (rtt),
+  m_highTxMark (highTxMark),
+  m_lastAckedSeq (lastAckedSeq)
 {
 }
 
@@ -622,12 +622,12 @@ private:
 TcpDctcpDecrementTest::TcpDctcpDecrementTest (uint32_t cWnd, uint32_t segmentSize, uint32_t segmentsAcked, SequenceNumber32 nextTxSequence,
                                               SequenceNumber32 lastAckedSeq, Time rtt, const std::string &name)
   : TestCase (name),
-    m_cWnd (cWnd),
-    m_segmentSize (segmentSize),
-    m_segmentsAcked (segmentsAcked),
-    m_rtt (rtt),
-    m_nextTxSequence (nextTxSequence),
-    m_lastAckedSeq (lastAckedSeq)
+  m_cWnd (cWnd),
+  m_segmentSize (segmentSize),
+  m_segmentsAcked (segmentsAcked),
+  m_rtt (rtt),
+  m_nextTxSequence (nextTxSequence),
+  m_lastAckedSeq (lastAckedSeq)
 {
 }
 
